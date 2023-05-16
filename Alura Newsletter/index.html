@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olá Tailwind!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!--
+    O HTML abaixo foi escrito usando o Tailwind css, um framework
+    muito ágil e fácil de ser implementado via script. 
+    A segunda forma de instalação é através do node npm install
+
+    Todas as funções do CSS podem ser escritas inline através das classes.
+    É importante lembrar de usar a documentação do framework, já que as
+    funções do CSS usam outros nomes para existir. 
+
+    Além disto, o Tailwind é altamente responsivo, rápido e fácil de usar.
+
+    o tailwind usa os princípios das classes utilitárias do CSS
+    - O que é Utility first:
+      * É uma abordagem de uso do CSS, que tem como objetivo priorizar a 
+        estilização por meio da chamada de classe utilitárias, estas por
+        suas vez representam as propriedades do CSS, como font-size, background, 
+        color, border etc.
+      * Utility first (utilitário primeiro) que também é chamado de Functional CSS
+        (CSS funcional), compartilha alguns princípios da programação funcional, 
+        como por exemplo a imutabilidade., composição, previsibilidade e prevenção
+        de efeitos colaterais.
+      *  onde apenas é atrelado ao elemento, a propriedade que de fato precisa.
+      * A ideia de composição traz que as classes são adicionadas uma a uma ao 
+        elemento o construindo, compondo com suas características, ao invés de
+        simplesmente herdá-las, o que faz com que praticamente não seja necessário
+        sobrescrever uma propriedade.
+    - Vantagens: 
+      * Não se preocupe com qual nome faz mais sentido para a classe do elemento.
+      * Estilize de forma rápida e sem escrever código CSS.
+      * Faça mudanças mais facilmente e sem efeito colateral.
+      * Construa um layout com ajuda de estilos pré definidos mas que tenham uma
+        leque enorme de possibilidades.
+-->
+
+<body class="bg-gradient-to-r from-purple-400 to-blue-600">
+
+  <main class="bg-white flex flex-col lg:flex-row justify-center
+     items-center w-4/5 mx-auto my-40 p-12 shadow-2xl opacity-50">
+    <img class="w-2/5 lg:w-1/5" src="./image/logo-tailwind.png" alt="Logo Tailwind CSS">
+    <h1 class="text-4xl lg:text-6xl font-black text-center">Olá Tailwind CSS!</h1>
+    <img class="w-2/5 lg:w-1/5" src="./image/logo-tailwind.png" alt="Logo Tailwind CSS">
+
+  </main>
+
+  <section class="mb-10">
+    <div class="flex justify-center m-auto w-3/5 p-4 rounded-lg bg-gradient-to-r from-cyan-300 to-cyan-100
+    opacity-70">
+      <img src="./image/icone-mergulhador.svg" alt="Ícone mergulhador" class=" h-72 mr-8">
+      <div class=" p-10 my-auto flex flex-col flex-wrap w-3/5 rounded-lg shadow-2xl">
+        <p class="text-4xl font-semibold ">Arthur</p>
+        <p class="text-1xl font-light ">Desenvolvedor Front end</p>
+        <ul class="p-6 mt-5 bg-gradient-to-r from-teal-300 to-teal-100 rounded-lg">
+          <li class=" flex items-center"><a href="#" class="pr-2">LinkedIn</a> <img class=" w-4 h-4" src="./image/In-Blue-26.png"
+              alt="logo linkedIn"> </li>
+          <li class=" flex items-center"><a href="#" class=" pr-2 ">GitHub</a> <img src="./image/github-mark.svg" alt="Github logo" class=" w-4 h-4" > </li>
+          <li class=" flex items-center"><a href="#" class=" pr-2 ">Email</a> <img src="./image/email-svgrepo-com.svg" alt="Email Logo" class=" w-4 h-4"> </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>
